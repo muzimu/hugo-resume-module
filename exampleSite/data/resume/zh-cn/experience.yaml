@@ -1,0 +1,15 @@
+enable: true
+list:
+  - title: 高级后端工程师
+    dates: 2022.03 - 至今
+    company: 示例科技
+    details: 负责核心交易系统架构与性能优化
+    items:
+      - details: 主导微服务拆分，QPS 提升 3 倍
+      - details: 设计并落地分布式缓存方案
+  - title: 后端工程师
+    dates: 2020.06 - 2022.02
+    company: 某互联网公司
+    details: 参与电商平台后端开发
+    items:
+      - details: 负责订单与支付模块

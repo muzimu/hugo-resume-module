@@ -1,0 +1,6 @@
+enable: true
+list:
+  - degree: Computer Science
+    university: Example University
+    dates: 2016 - 2020
+    reward: Outstanding Graduate

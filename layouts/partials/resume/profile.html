@@ -1,0 +1,13 @@
+
+                        <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                            {{/* 头像：支持完整 URL、绝对路径、或文件名（拼到 assets/images/） */}}
+                            {{ with .Resume.profile.avatar }}
+                            {{ $src := . }}
+                            {{ if not (or (hasPrefix . "http") (hasPrefix . "/")) }}
+                                {{ $src = printf "assets/images/%s" . | relURL }}
+                            {{ end }}
+                            <img class="resume-profile-image mb-3 mb-md-0 mr-md-3 rounded mx-auto d-md-none d-lg-inline-block" src="{{ $src }}" alt="avatar" style="max-width: 120px;">
+                            {{ end }}
+                            <h2 class="resume-name mb-0 text-uppercase">{{ .Resume.profile.name }}</h2>
+                            <div class="resume-tagline mb-3 mb-md-0">{{ .Resume.profile.tagline }}</div>
+                        </div><!--//resume-title-->

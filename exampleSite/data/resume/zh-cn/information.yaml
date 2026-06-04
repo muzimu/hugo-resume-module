@@ -1,0 +1,12 @@
+enable: false
+list:
+  - title: 技术博客
+    items:
+      - details: 个人技术博客，累计访问量 50w+，主要分享后端架构与性能优化经验
+  - title: 开源贡献
+    items:
+      - details: 为 10+ 开源项目提交过代码，包括 Kubernetes、Prometheus 等
+  - title: 其他
+    items:
+      - details: 持有驾照 C1
+      - details: 可接受出差

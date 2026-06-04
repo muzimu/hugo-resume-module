@@ -1,0 +1,22 @@
+# Hugo Module 挂载声明
+# 将 module 内的目录挂载到宿主站点对应的虚拟文件系统中。
+# mounts 采用合并语义：宿主同名文件/数据优先覆盖 module。
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "data"
+  target = "data"
+
+[[mounts]]
+  source = "assets"
+  target = "assets"
+
+[[mounts]]
+  source = "i18n"
+  target = "i18n"
+
+[[mounts]]
+  source = "static"
+  target = "static"

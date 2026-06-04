@@ -1,0 +1,11 @@
+enable: true
+list:
+  - name: National Collegiate Programming Contest
+    body: Regional Gold Medal
+    date: 2019
+  - name: CET-6
+    body: "600"
+    date: 2018
+  - name: Employee of the Year
+    body: Annual Outstanding Employee Award
+    date: 2023

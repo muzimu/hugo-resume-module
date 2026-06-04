@@ -1,0 +1,12 @@
+enable: false
+list:
+  - title: Tech Blog
+    items:
+      - details: Personal tech blog with 500k+ page views, sharing backend architecture and performance optimization experience
+  - title: Open-Source Contributions
+    items:
+      - details: Contributed code to 10+ open-source projects including Kubernetes, Prometheus, etc.
+  - title: Other
+    items:
+      - details: Driver's license (C1)
+      - details: Open to business travel

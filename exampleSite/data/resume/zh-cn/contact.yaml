@@ -1,0 +1,9 @@
+enable: true
+location: 北京
+list:
+  - icon: fas fa-envelope-square
+    url: mailto:hello@example.com
+    text: hello@example.com
+  - icon: fas fa-globe
+    url: "https://example.com"
+    text: example.com

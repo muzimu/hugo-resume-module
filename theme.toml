@@ -1,0 +1,16 @@
+name = "Hugo Resume Module"
+license = "MIT"
+description = "一个 data 驱动、可叠加在现有主题之上的 Hugo 简历模块。基于 DevResume (Bootstrap 4) 移植，支持多语言、YAML 数据驱动、参数命名空间隔离。"
+homepage = "https://github.com/muzimu/hugo-resume-module"
+tags = ["resume", "cv", "portfolio", "data-driven", "module", "multilingual"]
+features = ["resume", "multilingual", "data-driven", "responsive"]
+min_version = "0.110.0"
+
+[author]
+  name = "muzimu"
+  homepage = "https://muzimu.github.io/"
+
+[original]
+  name = "DevResume"
+  homepage = "http://themes.3rdwavemedia.com/"
+  author = "Xiaoying Riley / 3rd Wave Media"

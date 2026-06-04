@@ -1,0 +1,11 @@
+enable: true
+list:
+  - title: 技术栈
+    items:
+      - details: Go / Python / Java
+      - details: React / Vue / TypeScript
+      - details: PostgreSQL / Redis / Kafka
+  - title: 擅长领域
+    items:
+      - details: 高并发后端架构
+      - details: 云原生与容器化

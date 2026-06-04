@@ -1,0 +1,11 @@
+enable: true
+list:
+  - title: Tech Stack
+    items:
+      - details: Go / Python / Java
+      - details: React / Vue / TypeScript
+      - details: PostgreSQL / Redis / Kafka
+  - title: Expertise
+    items:
+      - details: High-concurrency backend architecture
+      - details: Cloud-native & containerization

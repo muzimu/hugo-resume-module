@@ -1,0 +1,8 @@
+enable: true
+list:
+  - icon: fab fa-github
+    url: https://github.com/example
+    title: example
+  - icon: fab fa-linkedin
+    url: https://linkedin.com/in/example
+    title: example

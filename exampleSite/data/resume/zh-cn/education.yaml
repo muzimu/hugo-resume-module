@@ -1,0 +1,6 @@
+enable: true
+list:
+  - degree: 计算机科学与技术
+    university: 示例大学
+    dates: 2016 - 2020
+    reward: 优秀毕业生

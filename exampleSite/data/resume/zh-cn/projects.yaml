@@ -1,0 +1,11 @@
+enable: true
+list:
+  - title: 开源监控系统
+    meta: 个人项目
+    tagline: 基于 Go 与 Prometheus 的轻量级监控告警平台，支持多租户与自定义指标。
+  - title: 电商交易平台
+    meta: 公司核心项目 | 2022 - 至今
+    tagline: 负责订单系统重构，引入 CQRS 架构，支持日均百万级订单处理，交易成功率提升至 99.95%。
+  - title: 微服务网关
+    meta: 开源贡献
+    tagline: 为开源 API 网关项目贡献限流算法优化，PR 已合并至主干，被 500+ 项目采用。

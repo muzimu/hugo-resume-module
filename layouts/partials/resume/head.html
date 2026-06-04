@@ -1,0 +1,27 @@
+
+    {{/* 站点级参数收敛到 .Site.Params.resume.* 命名空间，均带 default 兜底 */}}
+    <title>{{ .Site.Params.resume.title | default .Site.Title }}</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.resume.description | default .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.resume.author | default .Site.Params.author }}">
+
+    {{/* 使用站点的 favicon，如果没有则忽略 */}}
+    {{ with resources.Get "favicon.ico" }}
+    <link rel="shortcut icon" href="{{ .Permalink }}">
+    {{ else }}
+    {{ with $.Site.Params.favicon }}
+    <link rel="shortcut icon" href="{{ . | relURL }}">
+    {{ end }}
+    {{ end }}
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Theme SCSS -->
+    {{ $style := resources.Get "scss/devresume.scss" | resources.ExecuteAsTemplate "scss/devresume.scss" . | toCSS (dict "targetPath" "assets/css/devresume.css") | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">

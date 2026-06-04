@@ -1,0 +1,15 @@
+enable: true
+list:
+  - title: Senior Backend Engineer
+    dates: 2022.03 - Present
+    company: Example Tech
+    details: Led architecture and performance of the core trading system
+    items:
+      - details: Drove microservice decomposition, tripling QPS
+      - details: Designed and shipped a distributed caching solution
+  - title: Backend Engineer
+    dates: 2020.06 - 2022.02
+    company: An Internet Company
+    details: Worked on e-commerce platform backend
+    items:
+      - details: Owned the order and payment modules

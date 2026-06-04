@@ -1,0 +1,11 @@
+enable: true
+list:
+  - title: Open-Source Monitoring System
+    meta: Personal Project
+    tagline: A lightweight monitoring and alerting platform built with Go and Prometheus, supporting multi-tenancy and custom metrics.
+  - title: E-commerce Trading Platform
+    meta: Core Company Project | 2022 - Present
+    tagline: Led order system refactoring with CQRS architecture, handling 1M+ daily orders with 99.95% success rate.
+  - title: Microservice Gateway
+    meta: Open-Source Contribution
+    tagline: Contributed rate-limiting algorithm optimization to an open-source API gateway, PR merged to main branch, adopted by 500+ projects.

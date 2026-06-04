@@ -1,0 +1,21 @@
+
+                <div class="resume-intro py-3">
+
+                    <div class="media flex-column flex-md-row align-items-center">
+
+                        {{ with .Resume.profile.avatar }}
+                        {{/* 头像支持三种写法：完整 URL(http..)、站点绝对路径(/..)、或文件名(默认拼到 assets/images/ 下) */}}
+                        {{ $src := . }}
+                        {{ if not (or (hasPrefix . "http") (hasPrefix . "/")) }}
+                            {{ $src = printf "assets/images/%s" . | relURL }}
+                        {{ end }}
+                        <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="{{ $src }}" alt="image">
+                        {{ end }}
+
+                        <div class="media-body text-left">
+                            <p class="mb-0">{{ .Resume.summary.text | markdownify }}</p>
+                        </div><!--//media-body-->
+
+                    </div>
+
+                </div><!--//resume-intro-->

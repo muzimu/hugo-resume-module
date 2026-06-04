@@ -1,0 +1,11 @@
+enable: true
+list:
+  - name: 全国大学生程序设计竞赛
+    body: 区域赛金奖
+    date: 2019
+  - name: 英语六级
+    body: "600"
+    date: 2018
+  - name: 优秀员工
+    body: 年度优秀员工奖
+    date: 2023

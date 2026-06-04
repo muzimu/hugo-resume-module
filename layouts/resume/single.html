@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>
+    <!-- 注意：如果 head.html 也在 resume 目录下，需同步修改路径 -->
+    {{ partial "resume/head.html" . }}
+</head>
+<body>
+    {{/* 统一数据加载：按当前语言选择 data/resume/<lang>/，再 dict 打包下发 */}}
+    {{ $resume := index (index hugo.Data "resume") .Site.Language.Lang }}
+    {{ $ctx := dict "Page" . "Resume" $resume }}
+    <div class="main-wrapper">
+        <div class="container px-3 px-lg-5">
+            <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+                <!-- 核心修改：指定 partial 的完整路径 resume/header.html -->
+                {{ partial "resume/header.html" $ctx }}
+                <hr>
+                {{ if $resume.summary.enable }}
+                {{ partial "resume/summary.html" $ctx }}
+                {{ end }}
+                <hr>
+                <div class="resume-body">
+                    <div class="row">
+                        <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+                            {{ if $resume.experience.enable }}
+                            {{ partial "resume/experience.html" $ctx }}
+                            {{ end }}
+                            {{ if $resume.projects.enable }}
+                            {{ partial "resume/projects.html" $ctx }}
+                            {{ end }}
+                            {{ if $resume.information.enable }}
+                            {{ partial "resume/information.html" $ctx }}
+                            {{ end }}
+                        </div><!--//resume-main-->
+                        {{ partial "resume/sidebar.html" $ctx }}
+                    </div><!--//row-->
+                </div><!--//resume-body-->
+                <hr>
+                {{ if $resume.social.enable }}
+                {{ partial "resume/social.html" $ctx }}
+                {{ end }}
+            </article>
+        </div><!--//container-->
+        {{ partial "resume/footer.html" . }}
+    </div><!--//main-wrapper-->
+    {{ partial "resume/scripts.html" . }}
+</body>
+</html>

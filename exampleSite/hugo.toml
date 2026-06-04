@@ -1,0 +1,32 @@
+baseURL = "https://example.com/"
+title = "Hugo Resume Module — Demo"
+defaultContentLanguage = "zh-cn"
+enableEmoji = true
+
+# 通过 Hugo Module 引入本简历模块。
+# 在 exampleSite 内运行时用：hugo server --themesDir ../../..
+# 使其能解析到本模块（模块根的 config/module.toml 声明了 mounts）。
+[module]
+  [[module.imports]]
+    path = "github.com/muzimu/hugo-resume-module"
+
+[languages]
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 1
+    [languages.zh-cn.params]
+      isoCode = "zh-cn"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    [languages.en.params]
+      isoCode = "en"
+
+# 简历模块的站点级参数（全部可选）
+[params]
+  [params.resume]
+    title = "张三的简历"
+    description = "全栈工程师 · 简历示例"
+    author = "张三"
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
